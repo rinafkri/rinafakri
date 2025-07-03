@@ -1,0 +1,194 @@
+header {
+    background-color: rgba(232, 218, 195, 0.9); /* Light beige with transparency */
+    color: #5C4033; /* Dark brown text */
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(92, 64, 51, 0.2);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+nav {
+    background: linear-gradient(45deg, #E4D5B7, #D2BA8A); /* Beige to light tan */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(140, 100, 60, 0.2);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+nav a {
+    color: #5C4033; /* Dark brown for nav links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #B8860B;
+    background-color: #EFE1C6;
+    transform: translateY(-5px);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #A67B5B;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 0px 0px;
+    background-image: url("picture/bg6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #8B6F4E; /* Soft brown for header text */
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    border-radius: 15%;
+    transition: transform 0.3s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+header h2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    color: #5C4033;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 0px 0px;
+    background-image: url("picture/bg6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #5C4033;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #FDF6EC; /* Very light beige for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(92, 64, 51, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #5C4033;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info a {
+    display: block;
+    margin: 5px 0;
+    color: #A67B5B; /* Soft sienna */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #D8CAB0; /* Soft beige */
+    border-radius: 4px;
+    background-color: #FFF8DC;
+    color: #5C4033;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background-color: #C19A6B; /* Light brown */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A67B5B; /* Rich brown */
+}
+
+footer {
+    background: linear-gradient(45deg, #EBD9C3, #CDB89C); /* Soft warm beige */
+    color: #5C4033;
+    text-align: center;
+    font-style: oblique;
+    padding: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 10px rgba(92, 64, 51, 0.2);
+}
